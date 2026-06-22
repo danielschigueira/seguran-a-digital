@@ -1,11 +1,11 @@
-// Mapeando os elementos do HTML usando o DOM
+// Selecionando os elementos do HTML pelo DOM
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-// Lista de perguntas (Array de Objetos) prontas para o Brainstorming
+// Lista de objetos contendo enunciados e alternativas
 const perguntas = [
     {
         enunciado: "Pergunta 1",
