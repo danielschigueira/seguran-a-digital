@@ -41,7 +41,6 @@ body {
     padding: 20px;
 }
 
-/* Estilização da caixa do Quiz */
 .caixa-principal {
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
