@@ -8,6 +8,11 @@
     --borda: #0075FF;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
+
+    /* Novas variáveis alinhadas com a explicação de cores da aula */
+    --cor-principal: #00244D;
+    --cor-secundaria: #001E40;
+    --cor-destaque: #0075FF;
 }
 
 * {
@@ -41,6 +46,7 @@ body {
     padding: 20px;
 }
 
+/* Estilização da caixa do Quiz */
 .caixa-principal {
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
@@ -59,6 +65,29 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+/* ========================================================
+   [00:39] ESTILO PADRÃO DOS BOTÕES (ADICIONADO NESTA AULA)
+   ======================================================== */
+button {
+    background-color: var(--cor-principal);
+    color: var(--branco); /* Ajustado para manter o contraste com o texto */
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: var(--roboto);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cores */
+}
+
+/* ========================================================
+   [02:29] AJUSTANDO O DESTAQUE DOS BOTÕES (HOVER)
+   ======================================================== */
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
 }
 
 .texto-resultado {
